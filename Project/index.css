@@ -1,0 +1,449 @@
+/* Installing  */
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+/*   */
+* {
+    box-sizing: border-box;
+}
+/*   */
+body {
+  background: url('images/site/background_img.jpg') repeat-y;
+  background-size: 100%;
+  background-position: top center;
+  overflow: auto;
+}
+/*   */
+header {
+   
+    padding: 30px;
+    text-align: center;
+  
+}
+img.cookies {
+  padding-left: 35%;
+  padding-right: 35%; 
+  
+}
+table.competitions {
+   border: 1px solid black;
+   width: 90%;
+   margin-left: 5%;
+   margin-right: 5%;
+   background-color: azure;
+   border-radius: 10px ;
+
+}
+table.competitions tr th{
+  border: 1px solid black;
+  padding: 1%;
+  background-color: rgb(235, 121, 14)
+}
+table.competitions tr td{
+  text-align: center ;
+}
+table.competitions tr{
+  border-bottom: 1px solid black;
+}
+
+table.registration {
+   border: 1px solid black;
+   width: 90%;
+   margin-left: 5%;
+   margin-right: 5%;
+   background-color: azure;
+   border-radius: 10px ;
+
+}
+table.registration tr th{
+  border: 1px solid black;
+  padding: 5px;
+  background-color: rgb(235, 121, 14)
+}
+table.registration tr td{
+  text-align: center ;
+  background-color: rgb(200, 235, 255);
+}
+table.registration tr{
+  border-bottom: 1px solid black;
+}
+table.registration tr td.list_group{
+  background-color: rgb( 235, 255, 200);
+  padding: 5px;
+}
+table.registration tr.description td{
+  text-align: center ;
+  background-color: rgb(200, 235, 255);
+  padding: 5px;
+  border: 3px dotted black;
+  font-size: 20px;
+}
+
+/*      ####        #### begin     */
+.menu-main {
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+    background: white;
+}
+/*   */
+.menu-main li {display: inline-block;}
+/*   */
+.menu-main li:after {
+    content: "|";
+    color: #606060; /* */
+    display: inline-block;
+    vertical-align:top;
+}
+/*   */
+.menu-main li:last-child:after {content: none;}
+
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;  /*   */
+    display: inline-block;
+    transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+
+.menu-main a.current, .menu-main a:hover{color: #feb386;}
+
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #feb386;
+    transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}  
+
+/*      ####        #### end     */
+
+
+/*      ####        #### begin     */
+/*   */
+.sub-menu-1 {
+    display: none;
+}
+
+/*   */
+.menu-main li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 0px;
+    padding: 0%;
+   
+}
+
+/*   */
+.menu-main li:hover .sub-menu-1 ul{
+    display: block;
+    margin-left:  30px;
+    padding: 0px;
+    position: absolute;
+    visibility: visible;
+ }
+/*   */
+.sub-menu-1 ul{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(70, 70, 71);
+}
+/*   */
+.sub-menu-1 ul li{
+    margin-top: 15px;
+    border-bottom: 2px solid rgb(70, 70, 71);
+    }
+/*   */
+.sub-menu-1 ul li::after{
+    content: "";
+}
+
+/*      ####        #### end     */
+
+
+/*      ####        #### begin     */
+/*   */
+section {
+    float: left;
+    width: 70%;
+  }
+/*   */
+  aside {
+    float: left;
+    width: 25%;
+  }
+/*   */
+footer {
+    position:absolute;
+    bottom:0;
+    width:98%;
+    height:60px;   /* Height of the footer */
+ }
+
+ /*   */
+.news{
+    border: 2px solid black ;
+    width: 98%;
+    margin: 10px;
+    
+    background-color: rgb(187, 240, 222);
+    letter-spacing: 1px;
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+  
+}
+/*   */
+.news td span+span{
+    display: none;
+}
+/*   */
+th.title{
+  text-transform: uppercase;
+}
+/*   */
+.news tr th{
+    border: 1px solid black ;
+    width: 150px;
+    background-color: azure ;
+ }
+ /*   */
+.news tr th+th{
+    border: 1px solid black ;
+    text-align: left;
+}
+/*   */
+.news tr th+th::before{
+    content: "\00a0 \00a0 ";
+    width: 100px;
+}
+/*   */
+.news label{
+    color: #4a1dec;
+    text-decoration: none;
+}
+/*   */
+.news label:hover{
+    text-decoration: underline;
+}
+/*   */
+.imgnews{
+  width: 30%;
+  height: 20%;
+  float: left;
+  margin: 7px;
+}
+
+/*      ####        #### end    */
+
+/*      ####        #### begin     */
+/*   */
+.filtry-legend{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 1px;
+}
+/*   */
+.filtry1{
+    max-width: 400px;
+    margin: 5px auto 0;
+    padding: 2px 5px 5px 5px;
+    background: #FAAB1B;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 10px;
+}
+
+.filtry1 select, .filtry1 input{
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 8px;
+    color: black;
+    color: #0c0c0c;
+    background: #faf8f8;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=text].chip {
+  padding: 4px 4px;
+  width: 70%;
+  margin: 0px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+select.category {
+  width: 100%;
+  padding: 12px 20px;
+  margin:  0px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+/*Style for register window*/
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+#id03 .submitbutton {
+  background-color: #6cd43c;
+}
+#id03 .modal-content {
+  background-color: #e8f3e3;
+}
+button.buttonregister{
+  background-color: #054e24;
+}
+
+a.buttonregister{
+  background-color: #04AA6D;
+  color: white;
+  padding: 13px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+}
+a.buttonaction{
+  background-color: #04AA6D;
+  color: white;
+  padding: 3px 3px;
+  margin: 4px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+}
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+.window {
+border-radius: 5px;
+}
+/* Change styles for span and cancel button on extra small screens */
+img.cookies {
+  padding-left: 35%;
+  padding-right: 35%; 
+  
+}

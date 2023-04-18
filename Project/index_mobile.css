@@ -1,0 +1,106 @@
+@media (max-width: 550px) {
+    .menu-main {padding-top: 0;}
+    .menu-main li {display: block;}
+    .menu-main li:after {content: none;}
+    .menu-main a {
+        padding: 25px 0 20px; 
+        margin: 0 30px;
+         
+    }
+   section{
+     width: 50%;
+   } 
+   	  table.competitions tr > td{
+        	display: block;
+    	}
+
+	  table.competitions tr > th{
+        	display: none;
+    	}
+    .menu-main li:hover .sub-menu-1 ul{
+        display: block;
+        margin-left:  160px;
+        padding: 0px;
+        position: absolute;
+        visibility: visible;
+        }
+}   
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }  
+    .menu-main li:hover .sub-menu-1 ul{
+      display: block;
+      margin-left:  10px;
+      padding: 0px;
+      position: absolute;
+      visibility: visible;
+      }
+  }
+@media screen and (max-device-width: 480px){
+      aside{
+      width: 100%;
+      }
+      section{
+        width: 100%;
+      }
+      body{
+        background-repeat: repeat-y;
+      }
+      .news{
+        margin: 0px;
+      }
+      
+      
+      .sub-menu-1 ul li{
+        margin-top: 0px;
+        
+        }
+
+        /*   */
+      .menu-main li:hover .sub-menu-1 ul{
+        display: block;
+        margin-left:  110px;
+        padding: 0px;
+        position: absolute;
+        visibility: visible;
+        }
+	
+      table.competitions{
+	  	border-bottom: none;
+		
+  	}
+
+	  table.competitions tr > td{
+        	display: block;
+    	}
+
+	  table.competitions tr > th{
+        	display: none;
+    	}
+	
+	  table.competitions td:last-of-type{
+  		border-bottom: 1px solid black;
+	  }
+    img.cookies{
+    padding-left: 0%;
+    padding-right: 10%;
+     }
+     .container{
+       width: auto;
+     }
+
+     .modal{
+      width: 100%;
+      margin-left: 0%;
+      margin-right: 0%;
+     }
+
+     
+    
+  }
+ 
